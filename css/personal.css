@@ -1,0 +1,271 @@
+/* ---------- Shared base ---------- */
+:root{
+  --bg:#fff;
+  --text:#111;
+  --muted:#5b5b5b;
+  --border:#e8e8e8;
+  --soft:#f6f6f6;
+  --max:1120px;
+  --radius:14px;
+  --shadow: 0 10px 30px rgba(0,0,0,.06);
+}
+
+*{ box-sizing:border-box; }
+body{
+  margin:0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  line-height:1.6;
+  color:var(--text);
+  background:var(--bg);
+}
+img{ display:block; max-width:100%; }
+.container{ width:min(var(--max), calc(100% - 2rem)); margin-inline:auto; }
+
+.skip{
+  position:absolute; left:-999px; top:1rem;
+  background:#000; color:#fff;
+  padding:.75rem 1rem; border-radius:999px;
+}
+.skip:focus{ left:1rem; z-index:9999; }
+:focus-visible{ outline:3px solid #2b7cff; outline-offset:3px; }
+
+.kicker{
+  text-transform:uppercase;
+  letter-spacing:.12em;
+  font-size:.8rem;
+  color:var(--muted);
+  margin:0 0 .75rem;
+}
+.muted{ color:var(--muted); }
+
+/* ---------- Header (profile) ---------- */
+.site-header{
+  position:sticky; top:0; z-index:1000;
+  background:rgba(255,255,255,.75);
+  backdrop-filter: blur(10px);
+  border-bottom:1px solid var(--border);
+}
+.header-inner{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:1rem;
+  padding:.9rem 0;
+}
+.logo{ font-weight:650; text-decoration:none; }
+.subnav{ display:flex; gap:1rem; }
+.subnav a{ color:var(--muted); text-decoration:none; font-size:.95rem; }
+.subnav a:hover{ color:var(--text); }
+
+@media (max-width: 640px){
+  .subnav{ display:none; }
+}
+
+/* ---------- Buttons ---------- */
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:.85rem 1.1rem;
+  border-radius:999px;
+  border:1px solid var(--border);
+  background:#fff;
+  color:var(--text);
+  text-decoration:none;
+  font-weight:650;
+}
+.btn:hover{ border-color:#cfcfcf; text-decoration:none; }
+.btn.primary{
+  background:#111;
+  border-color:#111;
+  color:#fff;
+}
+
+/* ---------- Profile layout ---------- */
+.profile{
+  padding: clamp(1.5rem, 4vw, 2.5rem) 0;
+}
+
+.profile-hero{
+  display:grid;
+  grid-template-columns: 160px 1fr;
+  gap:1.5rem;
+  align-items:center;
+  padding-bottom: 1.5rem;
+  border-bottom:1px solid var(--border);
+}
+.profile-hero img{
+  width:160px; height:160px;
+  border-radius: 18px;
+  object-fit:cover;
+  border:1px solid var(--border);
+  background:var(--soft);
+}
+.profile-hero h1{
+  margin:.2rem 0 .2rem;
+  letter-spacing:-.02em;
+  line-height:1.1;
+}
+.role{
+  margin:0 0 .75rem;
+  color:var(--muted);
+  font-weight:600;
+}
+.lead{ margin:0 0 1.25rem; max-width: 70ch; color:var(--muted); }
+.hero-actions{ display:flex; gap:.75rem; flex-wrap:wrap; }
+
+@media (max-width: 700px){
+  .profile-hero{ grid-template-columns: 1fr; }
+  .profile-hero img{ width:120px; height:120px; }
+}
+
+/* ---------- Sections ---------- */
+.section{ padding: 1.75rem 0; }
+.section-head{
+  display:flex;
+  align-items:baseline;
+  justify-content:space-between;
+  gap:1rem;
+  flex-wrap:wrap;
+}
+.section h2{
+  margin:0;
+  font-size: clamp(1.35rem, 2.5vw, 1.8rem);
+  letter-spacing:-.02em;
+}
+.section-head p{ margin:.25rem 0 0; }
+
+/* ---------- Skills chips ---------- */
+.chips{
+  list-style:none;
+  padding:0;
+  margin:1rem 0 0;
+  display:flex;
+  flex-wrap:wrap;
+  gap:.6rem;
+}
+.chips li{
+  padding:.55rem .8rem;
+  border-radius:999px;
+  border:1px solid var(--border);
+  background: #fff;
+  color: var(--text);
+  font-weight:600;
+  font-size:.92rem;
+}
+
+/* ---------- Cards (experience / academic) ---------- */
+.cards{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap:1rem;
+  margin-top:1rem;
+}
+.card{
+  border:1px solid var(--border);
+  border-radius: var(--radius);
+  background:#fff;
+  padding:1.1rem 1.1rem 1rem;
+}
+.card h3{
+  margin:0 0 .4rem;
+  font-size:1.05rem;
+  line-height:1.25;
+}
+.meta{
+  margin:0 0 .6rem;
+  color:var(--muted);
+  font-weight:650;
+  font-size:.92rem;
+}
+.card p{ margin:.4rem 0 0; color:var(--muted); }
+
+/* subtle left accent like your old cards, but cleaner */
+.card--ongoing{ border-left: 4px solid #1f8a5b; }
+.card--acad{ border-left: 4px solid #6b3cff; }
+
+/* ---------- Footer ---------- */
+.footer{ padding: 2rem 0; }
+.footer-inner{
+  display:flex;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  gap:1rem;
+  border-top:1px solid var(--border);
+  padding-top:1.25rem;
+}
+
+/* --- Card actions --- */
+.card-actions{
+  display:flex;
+  gap:.6rem;
+  flex-wrap:wrap;
+  margin-top:.9rem;
+}
+.btn.small{
+  padding:.55rem .85rem;
+  font-size:.92rem;
+}
+
+/* --- Modal PDF viewer --- */
+.modal{
+  position:fixed;
+  inset:0;
+  display:none;
+  z-index:2000;
+}
+.modal.is-open{ display:block; }
+
+.modal-backdrop{
+  position:absolute;
+  inset:0;
+  background: rgba(0,0,0,.5);
+}
+
+.modal-panel{
+  position:relative;
+  width:min(1100px, calc(100% - 2rem));
+  height:min(85vh, 900px);
+  margin: 7vh auto 0;
+  background:#fff;
+  border-radius: 16px;
+  border:1px solid var(--border);
+  box-shadow: var(--shadow);
+  display:flex;
+  flex-direction:column;
+  overflow:hidden;
+}
+
+.modal-header, .modal-footer{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:1rem;
+  padding: .85rem 1rem;
+  border-bottom:1px solid var(--border);
+}
+.modal-footer{
+  border-bottom:none;
+  border-top:1px solid var(--border);
+  justify-content:flex-end;
+}
+
+.icon-btn{
+  border:1px solid var(--border);
+  background:#fff;
+  border-radius:999px;
+  padding:.4rem .65rem;
+  cursor:pointer;
+}
+
+.modal-body{
+  flex:1;
+  background: var(--soft);
+}
+
+#pdfFrame{
+  width:100%;
+  height:100%;
+  border:0;
+  background:#fff;
+}

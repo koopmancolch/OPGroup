@@ -1,145 +1,183 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>OP Group</title>
-  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="LOGO.png" sizes="any">
+  <meta name="description" content="OP Research Group — From chaos to clarity. Research in BESS, grids, dynamical systems, and TDA/ML." />
+  <link rel="stylesheet" href="css/styles2.css" />
 </head>
-<body>
 
-  <!-- MENU BAR -->
-  <header class="navbar">
-    <div class="logo">OP Group</div>
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#mission">Mission</a></li>
-        <li><a href="#events">Events</a></li>
-        <li><a href="#members">Members</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <!-- NAV -->
+  <header class="site-header" data-header>
+    <div class="container header-inner">
+      <a class="logo" href="#">OP Group</a>
+
+      <button class="nav-toggle" type="button"
+        aria-expanded="false" aria-controls="navmenu">
+        <span class="sr-only">Open menu</span>
+        ☰
+      </button>
+
+      <nav id="navmenu" class="nav" aria-label="Primary">
+        <a href="#">Home</a>
+        <a href="#mission">Mission</a>
+        <a href="#events">Projects</a>
+        <a href="#members">Members</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <!-- MISSION -->
+  <main id="main">
+    <!-- HERO -->
     <section id="mission" class="hero">
-    <div class="hero-text">
-        <h1>"From chaos to clarity"</h1>
-        <p>Our group unites proactive mathematicians, physicists, and data analysts to tackle scientific and engineering challenges with creativity and rigor.</p>
-    </div>
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="kicker">OP Research Group</p>
+          <h1>From chaos to clarity.</h1>
+          <p class="lead">
+            We unite proactive mathematicians, physicists, and data analysts to tackle scientific and engineering challenges with creativity and rigor.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn primary" href="#events">See projects</a>
+            <a class="btn" href="#members">Meet the team</a>
+          </div>
+        </div>
+
+        <aside class="hero-card" aria-label="Focus areas">
+          <p class="hero-card-title">Focus</p>
+          <ul class="hero-bullets">
+            <li>BESS sizing & deployment</li>
+            <li>Grid modeling</li>
+            <li>Dynamical systems</li>
+            <li>TDA & ML</li>
+          </ul>
+        </aside>
+      </div>
     </section>
 
-  <!-- FOCUS AREAS  -->
-   <section class="focus-areas">
-  <h2>Our Focus Areas</h2>
-  <div class="focus-grid">
-    <div class="focus-card">
-      <img class="BESS" src="images/bess.jpg" alt="BESS Sizing">
-      <p>BESS Sizing</p>
-    </div>
-    <div class="focus-card">
-      <img class="GRID" src="images/grid.jpg" alt="Electrical Grid Modeling">
-      <p>Electrical Grid Modeling</p>
-    </div>
-    <div class="focus-card">
-      <img class="DYN" src="images/dynamics.jpg" alt="Dynamical System Analysis">
-      <p>Dynamical System Analysis</p>
-    </div>
-    <div class="focus-card">
-      <img class="TDA" src="images/tda.jpg" alt="TDA and ML">
-      <p>Topological Data Analysis & ML</p>
-    </div>
-  </div>
-</section>
+    <!-- FOCUS AREAS -->
+    <section class="focus-areas" aria-labelledby="focus-title">
+      <div class="container">
+        <h2 id="focus-title">Our Focus Areas</h2>
 
-<!-- MEMBERS -->
-<section id="members" class="members-section">
-  <h2>Meet the Team</h2>
+        <div class="focus-grid">
+          <figure class="focus-card">
+            <img src="images/bess.jpg" alt="BESS sizing" loading="lazy" decoding="async" width="640" height="420">
+            <figcaption>BESS Sizing</figcaption>
+          </figure>
 
-    <div class="member-card-horizontal former-member">
-    <img src="images/teacher.jpg" alt="Former Member">
-    <div class="member-info">
-      <h3>Oliver Probst, PhD</h3>
-      <p>Experienced researcher in renewable energy integration, optimization and administration. Founder of the OP Research Group.</p>
-      <a href="https://en.wikipedia.org/wiki/Oliver_Matthias_Probst_Oleszewski">View profile →</a>
-    </div>
-  </div>
+          <figure class="focus-card">
+            <img src="images/grid.jpg" alt="Electrical grid modeling" loading="lazy" decoding="async" width="640" height="420">
+            <figcaption>Electrical Grid Modeling</figcaption>
+          </figure>
 
-  <div class="member-card-horizontal">
-    <img src="images/carlos.jpg" alt="Carlos Colchero">
-    <div class="member-info">
-      <h3>Carlos Colchero</h3>
-      <p>Engineering Physicist & Cofounder. Experience in mathematical modeling, data extraction, optimization, visualization and analysis using Python.</p>
-      <a href="members/carlos.html">View profile →</a>
-    </div>
-  </div>
+          <figure class="focus-card">
+            <img src="images/dynamics.jpg" alt="Dynamical system analysis" loading="lazy" decoding="async" width="640" height="420">
+            <figcaption>Dynamical System Analysis</figcaption>
+          </figure>
 
-  <div class="member-card-horizontal">
-    <img src="images/jorge.png" alt="Jorge Perez">
-    <div class="member-info">
-      <h3>Jorge Perez</h3>
-      <p>Engineering Physics & Cofounder. Undergraduate student with strong background in mathematical modeling, problem-solving and collaborative research. </p>
-      <a href="members/jorge.html">View profile →</a>
-    </div>
-  </div>
-<!-- 
-  <div class="member-card-horizontal">
-    <img src="images/alvaro.jpg" alt="Álvaro Herrera">
-    <div class="member-info">
-      <h3>Álvaro Herrera</h3>
-      <p>BESS Sizing & Deployment Models</p>
-      <a href="members/alvaro.html">View profile →</a>
-    </div>
-  </div> -->
-
-  <!-- <div class="member-card-horizontal">
-    <img src="images/rodrigo.jpg" alt="Rodrigo Leal">
-    <div class="member-info">
-      <h3>Rodrigo Leal</h3>
-      <p>Systems Simulation & Data Infrastructure</p>
-      <a href="members/rodrigo.html">View profile →</a>
-    </div>
-  </div>
-
-  <div class="member-card-horizontal">
-    <img src="images/nico.jpg" alt="Nicolas de Bruijn">
-    <div class="member-info">
-      <h3>Nicolas de Bruijn</h3>
-      <p>Topological Data Analysis & ML</p>
-      <a href="members/nicolas.html">View profile →</a>
-    </div>
-  </div>  -->
-
-    <!-- <div class="member-card-horizontal">
-    <img src="images/diego.jpg" alt="Nicolas de Bruijn">
-    <div class="member-info">
-      <h3>Diego Jimenez</h3>
-      <p>BESS Sizing & Deployment Models</p>
-      <a href="members/diego.html">View profile →</a>
-    </div>
-  </div> -->
-
-</section>
-
-
-  <!-- EVENTS -->
-  <section id="events" class="events">
-    <h2>Current projects</h2>
-    <div class="event-list">
-      <div class="event-card">
-        <h3>Seminary on the probabilistic description of BESS using Renewal Process theory.</h3>
-        <p>September 24, 2025 – Carlos Colchero, Álvaro Herrera</p>
-        <b>Expedition, 6th Floor - Knowledge Hall</b>
+          <figure class="focus-card">
+            <img src="images/tda.jpg" alt="Topological data analysis and machine learning" loading="lazy" decoding="async" width="640" height="420">
+            <figcaption>Topological Data Analysis &amp; ML</figcaption>
+          </figure>
+        </div>
       </div>
-      <div class="event-card">
-        <h3>Data-driven analysis of open quantum systems</h3>
-        <p>Aug 2025 - Jorge Perez</p>
+    </section>
+
+    <!-- MEMBERS -->
+    <section id="members" class="members-section" aria-labelledby="team-title">
+      <div class="container">
+        <h2 id="team-title">Meet the Team</h2>
+
+        <article class="member-card former-member">
+          <img src="images/teacher.jpg" alt="Oliver Probst" loading="lazy" decoding="async" width="360" height="360">
+          <div class="member-info">
+            <h3>Oliver Probst, PhD</h3>
+            <p>Experienced researcher in renewable energy integration, optimization and administration. Founder of the OP Research Group.</p>
+            <a href="https://en.wikipedia.org/wiki/Oliver_Matthias_Probst_Oleszewski">View profile →</a>
+          </div>
+        </article>
+
+        <article class="member-card">
+          <img src="images/carlos.jpg" alt="Carlos Colchero" loading="lazy" decoding="async" width="360" height="360">
+          <div class="member-info">
+            <h3>Carlos Colchero</h3>
+            <p>Engineering Physicist &amp; Cofounder. Mathematical modeling, data extraction, optimization, visualization and analysis using Python.</p>
+            <a href="members/carlos.html">View profile →</a>
+          </div>
+        </article>
+
+        <article class="member-card">
+          <img src="images/jorge.png" alt="Jorge Perez" loading="lazy" decoding="async" width="360" height="360">
+          <div class="member-info">
+            <h3>Jorge Perez</h3>
+            <p>Engineering Physics &amp; Current Lead. Strong background in mathematical modeling, problem-solving and collaborative research.</p>
+            <a href="members/jorge.html">View profile →</a>
+          </div>
+        </article>
+
+        <article class="member-card">
+          <img src="images/alvaro.jpg" alt="Alvaro Herrera" loading="lazy" decoding="async" width="360" height="360">
+          <div class="member-info">
+            <h3>Álvaro Herrera</h3>
+            <p>Engineering Physics &amp; Active Member. Strong background in Neural Networks and Quantitative Finance</p>
+            <!-- <a href="members/alvaro.html">View profile →</a> -->
+          </div>
+        </article>
+
+        <article class="member-card">
+          <img src="images/nicolas.jpg" alt="Nicolas" loading="lazy" decoding="async" width="360" height="360">
+          <div class="member-info">
+            <h3>Nicolas de Brujin</h3>
+            <p>Engineering Physics &amp; Active Member. Strong background in BESS sizing, . . .</p>
+            <!-- <a href="members/alvaro.html">View profile →</a> -->
+          </div>
+        </article>
+
+        <article class="member-card">
+          <img src="images/dago.jpg" alt="Diego" loading="lazy" decoding="async" width="360" height="360">
+          <div class="member-info">
+            <h3>Diego Jiménez</h3>
+            <p>Engineering Physics &amp; Active Member. Experienced in BESS sizing and . . .</p>
+            <!-- <a href="members/alvaro.html">View profile →</a> -->
+          </div>
+        </article>
       </div>
+    </section>
 
+    <!-- PROJECTS -->
+    <section id="events" class="events" aria-labelledby="projects-title">
+      <div class="container">
+        <h2 id="projects-title">Current projects</h2>
 
-  <footer>
-    <p>© 2025 OP Research Team</p>
+        <div class="event-list">
+          <article class="event-card">
+            <h3>Inspection of real data from primary power plants</h3>
+            <p class="meta">Winter 2025 - Carlos Colchero & Diego Arreguín</p>
+            <!-- <p class="meta"><strong>Expedition, 6th Floor - Knowledge Hall</strong></p> -->
+          </article>
+
+          <article class="event-card">
+            <h3>Forecasting Koopman Methods</h3>
+            <p class="meta">Winter 2025 - Carlos Colchero</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact" class="footer">
+    <div class="container footer-inner">
+      <p>© 2025 OP Research Team</p>
+      <p class="muted">Contact: <a href="mailto:you@example.com">you@example.com</a></p>
+    </div>
   </footer>
 
   <script src="js/main.js"></script>

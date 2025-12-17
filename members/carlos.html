@@ -1,207 +1,293 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Carlos Colchero – Portfolio</title>
-  <link rel="stylesheet" href="../css/styles.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Carlos Colchero – Profile</title>
+  <link rel="icon" href="/LOGO.png" sizes="any">
+  <meta name="description" content="Carlos Colchero — Engineering Physicist and Data Analyst. Research in data-driven modeling and dynamical systems." />
+  <link rel="stylesheet" href="../css/personal.css" />
 </head>
-<body>
 
-  <header class="navbar">
-    <div class="logo"><a href="../index.html">OP Group</a></div>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="../index.html">OP Group</a>
+      <nav class="subnav" aria-label="Profile">
+        <a href="../index.html#members">Team</a>
+        <a href="../index.html#events">Projects</a>
+        <a href="../index.html#contact">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <main class="profile-container">
-
+  <main id="main" class="container profile">
     <!-- Hero -->
     <section class="profile-hero">
-      <img src="../images/carlos2.jpg" alt="Carlos Colchero" />
-      <div>
+      <img src="../images/carlos2.jpg" alt="Carlos Colchero" loading="lazy" decoding="async" width="420" height="420" />
+      <div class="profile-hero-copy">
+        <p class="kicker">Member Profile</p>
         <h1>Carlos Colchero</h1>
-        <h3>Engineering Physicist and Data Analyst</h3>
-        <p>I focus on data-driven modeling, Koopman operator theory, and real-world applications in energy and climate systems. I aim to bridge theory and practice through smart, scalable tools.</p>
+        <p class="role">Engineering Physicist · Data Analyst</p>
+        <p class="lead">
+          I focus on data-driven modeling, Koopman operator theory, and real-world applications in energy and climate systems.
+          I aim to bridge theory and practice through smart, scalable tools.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn primary" href="../index.html#events">Group projects</a>
+          <a class="btn" href="mailto:carloscolchero@outlook.com">Email</a>
+        </div>
       </div>
     </section>
 
     <!-- Skills -->
-    <section class="skills-section">
-      <h2>Core Skills</h2>
-      <ul class="skills-list">
-        <li>Dynamical System Linearization</li>
-        <li>BESS Sizing & Grid Integration</li>
-        <li>Data Extraction using Selenium & APIs</li>
-        <li>Data cleaning using PANDAS & R Studio</li>
-        <li>Data analysis using NUMPY, SCIPY, Mathematica & Matlab</li>
-        <li>Data visualization using Matplotlib, Folium & Plotly</li>
-        <li>LaTeX, Microsoft Word, Microsoft Excel</li>
-        <li>Manifold Learning & ML</li>
-        <li>Topological Data Analysis (TDA)</li>
-        <li>Measure Theory & Statistical Analysis</li>
-        <li>PDF Analysis & OCR methods using Tesseract</li>
-        <li>HMTL, CSS & JS</li>
-        <li>Database arquitecture, Parquet & basic SQL</li>
+    <section class="section">
+      <div class="section-head">
+        <h2>Core Skills</h2>
+        <p class="muted">A quick snapshot of tools and methods I use most.</p>
+      </div>
 
-
-
-
+      <ul class="chips" aria-label="Skills">
+        <li>Dynamical system linearization</li>
+        <li>BESS sizing & grid integration</li>
+        <li>Koopman / HAVOK methods</li>
+        <li>Data extraction (Selenium, APIs)</li>
+        <li>Data cleaning (Pandas, R)</li>
+        <li>Scientific computing (NumPy, SciPy)</li>
+        <li>Mathematica & MATLAB</li>
+        <li>Visualization (Matplotlib, Folium, Plotly)</li>
+        <li>Measure theory & statistics</li>
+        <li>Topological data analysis (TDA)</li>
+        <li>OCR / PDF analysis (Tesseract)</li>
+        <li>HTML / CSS / JS</li>
+        <li>Data architecture (Parquet, basic SQL)</li>
+        <li>LaTeX, Word, Excel</li>
       </ul>
     </section>
 
-    <!-- Projects -->
-    <section class="projects-section">
-      <h2>Research Projects & Experience</h2>
+    <!-- Experience -->
+    <section class="section">
+      <div class="section-head">
+        <h2>Research Projects & Experience</h2>
+        <p class="muted">Reverse-chronological highlights.</p>
+      </div>
 
-        <div class="project-card-ongoing">
-        <h3>Research Semester (Tecnológico de Monterrey) - Cost-effective sizing of BESS systems</h3>
-        <h4>August 2025 (ONGOING)</h4>
-        <p>Applications of measure theory and Markov processes in the description of probability distributions for battery power and energy.</p>
-        </div>
+      <div class="cards">
+        <article class="card card--ongoing">
+          <h3>ON.Energy — Financial Intern</h3>
+          <p class="meta">Nov 2025 · Ongoing</p>
+          <p>Quantitative analysis of energy markets. Multicriteria decision models for investment planning. Financial modeling.</p>
+        </article>
 
-        <div class="project-card-ongoing">
-        <h3>Research Collaborator (OP Group) - Spectral Analysis of Quantum Dynamical Systems</h3>
-        <h4>August 2025 (ONGOING)</h4>
-        <p>Application of mHAVOK as a spectral tool for the analysis of Linbladian quantum systems.</p>
-        </div>
+        <article class="card card--ongoing">
+          <h3>Research Analyst (University of Southampton) — Action-based Neural Networks</h3>
+          <p class="meta">Oct 2025 · Ongoing</p>
+          <p>Physics-informed neural networks based on variational principles to improve dataless training efficiency and accuracy.</p>
+        </article>
 
-        <div class="project-card-ongoing">
-        <h3>Data Analyst (Iberdrola) - Time Series Analysis </h3>
-        <h4>January 2025 (ONGOING)</h4>
-        <p>Data extraction and analysis for model training and validation. Forecasting and downscaling techniques using machine learning algorithms.</p>
-        </div>
+        <article class="card card--ongoing">
+          <h3>Data Analyst (Iberdrola) — Time Series Analysis</h3>
+          <p class="meta">Jan 2025 · Ongoing</p>
+          <p>Data extraction and analysis for model training/validation. Forecasting and downscaling using ML methods.</p>
+        </article>
 
-        <div class="project-card-ongoing">
-        <h3>Research Analyst (University of Southampton) - Lagrangian Neural Networks</h3>
-        <h4>March 2025 (ONGOING)</h4>
-        <p>Physics informed neural networks based on variational principles to increase dataless training efficiency and accuracy.</p>
-        </div>
+        <article class="card">
+          <h3>Research Collaborator (OP Group) — Spectral Analysis of Quantum Dynamical Systems</h3>
+          <p class="meta">Aug 2025 – Dec 2025</p>
+          <p>Application of mHAVOK as a spectral tool for the analysis of Lindbladian quantum systems.</p>
 
-        <div class="project-card">
-        <h3>Research Paper Main Author (OP Group) - An objective criterion for separating linear and forcing terms in multichannel HAVOK models</h3>
-        <h4>January 2025 - August 2025.</h4>
-        <p>Tailored a novel algorithm based on generalized embedding techniques for the linearization of chaotic dynamical systems.</p>
-        </div>
-
-
-        <div class="project-card">
-        <h3>Research Collaborator - Pancharatnam-Berry Phase of Optical Systems</h3>
-        <h4>March 2025 - August 2025.</h4>
-        <p>Collaborated with Jorge Pérez and Dr. Julio Gútierrez on the description of the Pancharatnam-Berry Phase through the use of Wolfram Mathematica.
+          <div class="card-actions">
+            <button class="btn small js-open-pdf" data-title="Spectral Analysis of Quantum Dynamical Systems"
+              data-pdf="/pdfs/quantum-spectral.pdf">
+              View paper
+            </button>
+            <a class="btn small" href="/pdfs/quantum-spectral.pdf" download>Download</a>
           </div>
+        </article>
 
-        <div class="project-card">
-        <h3>Research Analyst (OP Group) - Workshops & Seminaries on Ergodic and Koopman Theory</h3>
-        <h4>March 2025 - June 2025.</h4>
-        <p>Led a seminar series on Koopman analysis.</p>
-        </div>
+        <article class="card">
+          <h3>Research Semester (Tecnológico de Monterrey) — Cost-effective sizing of BESS systems</h3>
+          <p class="meta">Aug 2025 – Dec 2025</p>
+          <p>Measure theory and Markov processes to describe probability distributions for battery power and energy.</p>
+        </article>
 
-        <div class="project-card">
-        <h3>Data Analyst (Kreston BSG) - Daily task automatization & data visualization</h3>
-        <h4>December 2024 - March 2025.</h4>
-        <p>Applied Python algorithms to automate daily tasks and increase efficiency.</p>
-        </div>
+        <article class="card">
+          <h3>Main Author (OP Group) — Criterion for separating linear and forcing terms in multichannel HAVOK</h3>
+          <p class="meta">Jan 2025 – Aug 2025</p>
+          <p>Developed an algorithm based on generalized embeddings for linearization of chaotic dynamical systems.</p>
 
-        <div class="project-card">
-        <h3>Research Analyst (OP Group) - Electrical Grid simulation, optimization & visualization using PyPSA & Folium</h3>
-        <h4>August 2024 - October 2024.</h4>
-        <p>Designed PyPSA algorithms to analyze the Mexican energy market and transmission network, focusing on Local Marginal Pricing.</p>
-        </div>
+          <div class="card-actions">
+            <button class="btn small js-open-pdf" data-title="HAVOK Criterion Paper"
+              data-pdf="/pdfs/intermittent.pdf">
+              View paper
+            </button>
+            <a class="btn small" href="/pdfs/intermittent.pdf" download>Download</a>
+          </div>
+        </article>
 
-        <div class="project-card">
-        <h3>Front-end developer (iSolenum) - Webpage development using Front-end tools</h3>
-        <h4>June 2024 - August 2024.</h4>
-        <p>Designed the webpage of the industry partner.</p>
-        </div>
+        <!-- <article class="card">
+          <h3>Research Collaborator — Pancharatnam–Berry Phase of Optical Systems</h3>
+          <p class="meta">Mar 2025 – Aug 2025</p>
+          <p>With Jorge Pérez and Dr. Julio Gutiérrez: described Pancharatnam–Berry phase using Wolfram Mathematica.</p>
+        </article> -->
 
-        <div class="project-card">
-        <h3>Research Paper Coauthor - Damage detection in composite and plastic thin-wall beams by operational
-        modal analysis: An experimental assessment</h3>
-        <h4>February 2024 - June 2024.</h4>
-        <p>Coauthor in research paper, designing a Wavelet based algorith for the detection of damage on beams.</p>
-        </div>
+        <article class="card">
+          <h3>Research Analyst (OP Group) — Workshops & Seminaries on Ergodic and Koopman Theory</h3>
+          <p class="meta">Mar 2025 – Jun 2025</p>
+          <p>Led a seminar series on Koopman analysis.</p>
+        </article>
 
-        <div class="project-card">
-        <h3>Data Management (Kobrex) - Database architecture & optimization</h3>
-        <h4>January 2024 - February 2024</h4>
-        <p>Designed Parquet-SQL algorithms for faster data storage and querying.</p>
-        </div>
+        <article class="card">
+          <h3>Data Analyst (Kreston BSG) — Automation & Visualization</h3>
+          <p class="meta">Dec 2024 – Mar 2025</p>
+          <p>Built Python automations to increase efficiency and improve reporting.</p>
+        </article>
 
-        <div class="project-card">
-        <h3>Finance Director (SAIFI)</h3>
-        <h4>August 2023 - December 2023</h4>
-        <p>Event planning, sponsorships & balance reports.</p>
-        </div>
+        <article class="card">
+          <h3>Research Analyst (OP Group) — Grid simulation with PyPSA & Folium</h3>
+          <p class="meta">Aug 2024 – Oct 2024</p>
+          <p>Analyzed Mexican energy market and transmission network, including LMP visualization.</p>
 
-        <div class="project-card">
-        <h3>Research Collaborator - Transverse magnetic polarization effects in diffracted beams</h3>
-        <h4>January 2023 - December 2023</h4>
-        <p>Applied Wolfram Mathematica to the analytical description of optical systems.</p>
-        </div>
+          <div class="card-actions">
+            <button class="btn small js-open-pdf" data-title="PyPSA Grid Simulation"
+              data-pdf="/pdfs/PyPSA.pdf">
+              View report
+            </button>
+            <a class="btn small" href="/pdfs/PyPSA.pdf" download>Download</a>
+          </div>
+        </article>
 
+        <article class="card">
+          <h3>Front-end Developer (iSolenum)</h3>
+          <p class="meta">Jun 2024 – Aug 2024</p>
+          <p>Designed and implemented the industry partner website using front-end tools.</p>
+        </article>
 
-        <div class="project-card">
-        <h3>Project Coordinator (SATEM)</h3>
-        <h4>January 2023 - June 2023</h4>
-        <p>Participated in talks, events and seminaries.</p>
-        </div>
+        <article class="card">
+          <h3>Coauthor — Damage detection in thin-wall beams via operational modal analysis</h3>
+          <p class="meta">Feb 2024 – Jun 2024</p>
+          <p>Designed a wavelet-based algorithm for damage detection in composite beams.</p>
 
-        <h2>Academic Projects</h2>
+          <div class="card-actions">
+            <button class="btn small js-open-pdf" data-title="Damage Detection Paper"
+              data-pdf="/pdfs/damage-detection.pdf">
+              View paper
+            </button>
+            <a class="btn small" href="/pdfs/damage-detection.pdf" download>Download</a>
+          </div>
+        </article>
 
-        <div class="project-card-acad">
-        <h3>Material Sciences (Intercovamex) - Synthesis and characterization of carbon nanotube–carbon nanofiber (CNT–CNF) composites for potential capacitive energy storage applications
-        <h4>February 2025 - March 2025</h4>
-        <p>Designed a custom vacuum chamber for electrical property characterization of CNT–CNF. Participated in the synthesis of advanced materials, as well as their characterization using SEM, TEM, AFM, Raman Spectroscopy.</p>
-        </div>
+        <article class="card">
+          <h3>Data Management (Kobrex) — Database architecture & optimization</h3>
+          <p class="meta">Jan 2024 – Feb 2024</p>
+          <p>Designed Parquet + SQL workflows for faster storage and querying.</p>
+        </article>
 
-        <div class="project-card-acad">
-        <h3>Statistical Mechanics (Ternium) - Thermodynamic modeling of graphene</h3>
-        <h4>August 2024 - December 2024</h4>
-        <p>Described the phononic interactions in graphene, obtaining an analytical description of the specific heat of the material. Applied Ising Models to simulate the vibrational dynamics.</p>
-        </div>
+        <article class="card">
+          <h3>Finance Director (SAIFI)</h3>
+          <p class="meta">Aug 2023 – Dec 2023</p>
+          <p>Event planning, sponsorships, and balance reports.</p>
+        </article>
 
-        <div class="project-card-acad">
-        <h3>Stochastic Processes (John Deere) - Stochastic optimization of sprinkler system
-        <h4>August 2024 - December 2024</h4>
-        <p>Utilized genetic algorithms to optimize the structural cost of an agricultural sprinkler system under terrain- dependent constraints, identified using unsupervised learning techniques.</p>
-        </div>
+        <article class="card">
+          <h3>Research Collaborator — Transverse magnetic polarization effects in diffracted beams</h3>
+          <p class="meta">Jan 2023 – Dec 2023</p>
+          <p>Applied Wolfram Mathematica to analytical descriptions of optical systems.</p>
+        </article>
 
-        <div class="project-card-acad">
-        <h3>Renewable Energy - Clean energy generation in Mexico subsequent to the A/018/2023 agreement
-        <h4>February 2024 - March 2024</h4>
-        <p>A study of the energy market in México after significant political reforms.</p>
-        </div>
-
-        <div class="project-card-acad">
-        <h3>Renewable Energy - Eolic Energy Generation: Levelized cost
-        <h4>February 2024 - March 2024</h4>
-        <p>Studied the integration of renewable energy sources into the Mexican energy market.</p>
-        </div>
-
-        <!-- <div class="project-card-acad">
-        <h3>Renewable Energy - Photovoltaic plant: project planning & data analysis
-        <h4>February 2024 - March 2024</h4>
-        <p>Description.</p>
-        </div> -->
-
-        <div class="project-card-acad">
-        <h3>Renewable Energy - Distributed Energy Generation project planning in Monterrey
-        <h4>January 2024 - March 2024</h4>
-        <p>Optimized a custom charge-discharge scheme based on the Mexican energy and power tariff system.</p>
-        </div>
-
-
-
-
-
-
-
-
-
-
-
-
+        <article class="card">
+          <h3>Project Coordinator (SATEM)</h3>
+          <p class="meta">Jan 2023 – Jun 2023</p>
+          <p>Participated in talks, events, and seminaries.</p>
+        </article>
+      </div>
     </section>
 
+    <!-- Academic -->
+    <section class="section">
+      <div class="section-head">
+        <h2>Academic Projects</h2>
+        <p class="muted">Selected university / industry-collab coursework projects.</p>
+      </div>
+
+      <div class="cards">
+        <article class="card card--acad">
+          <h3>Material Sciences (Intercovamex) — CNT–CNF composites for capacitive storage</h3>
+          <p class="meta">Feb 2025 – Mar 2025</p>
+          <p>Built a custom vacuum chamber for electrical characterization; participated in synthesis and SEM/TEM/AFM/Raman.</p>
+        </article>
+
+        <article class="card card--acad">
+          <h3>Statistical Mechanics (Ternium) — Thermodynamic modeling of graphene</h3>
+          <p class="meta">Aug 2024 – Dec 2024</p>
+          <p>Analytical specific-heat model using phononic interactions; simulated vibrational dynamics with Ising models.</p>
+          <div class="card-actions">
+            <button class="btn small js-open-pdf" data-title="Spectral Analysis of Quantum Dynamical Systems"
+              data-pdf="/pdfs/thermo.pdf">
+              View paper
+            </button>
+            <a class="btn small" href="/pdfs/thermo.pdf" download>Download</a>
+          </div>
+        </article>
+
+
+        <article class="card card--acad">
+          <h3>Stochastic Processes (John Deere) — Stochastic optimization of sprinkler system</h3>
+          <p class="meta">Aug 2024 – Dec 2024</p>
+          <p>Genetic algorithms for cost optimization under terrain constraints identified via unsupervised learning.</p>
+        </article>
+
+        <article class="card card--acad">
+          <h3>Renewable Energy — Clean energy generation in Mexico after A/018/2023</h3>
+          <p class="meta">Feb 2024 – Mar 2024</p>
+          <p>Study of Mexico’s energy market after significant political reforms.</p>
+        </article>
+
+        <article class="card card--acad">
+          <h3>Renewable Energy — Wind generation: levelized cost</h3>
+          <p class="meta">Feb 2024 – Mar 2024</p>
+          <p>Studied integration of renewable energy sources into the Mexican energy market.</p>
+        </article>
+
+        <article class="card card--acad">
+          <h3>Renewable Energy — Distributed generation project planning in Monterrey</h3>
+          <p class="meta">Jan 2024 – Mar 2024</p>
+          <p>Optimized a charge/discharge scheme based on Mexican energy and power tariff structures.</p>
+        </article>
+      </div>
+    </section>
   </main>
 
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© 2025 OP Research Team</p>
+      <p class="muted"><a href="../index.html">Back to OP Group</a></p>
+    </div>
+  </footer>
+  <div class="modal" id="pdfModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="pdfTitle">
+  <div class="modal-backdrop" data-close></div>
+
+  <div class="modal-panel" role="document">
+    <div class="modal-header">
+      <h2 id="pdfTitle">Document</h2>
+      <button class="icon-btn" type="button" aria-label="Close" data-close>✕</button>
+    </div>
+
+    <div class="modal-body">
+      <iframe id="pdfFrame" title="PDF preview" loading="lazy"></iframe>
+    </div>
+
+    <div class="modal-footer">
+      <a id="pdfOpenNew" class="btn small" href="#" target="_blank" rel="noopener">Open in new tab</a>
+      <a id="pdfDownload" class="btn small" href="#" download>Download</a>
+    </div>
+  </div>
+</div>
+<script src="/js/main.js"></script>
 </body>
+
+
 </html>

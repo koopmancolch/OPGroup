@@ -1,101 +1,157 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Carlos Colchero – Portfolio</title>
-  <link rel="stylesheet" href="../css/styles.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jorge Pérez – Profile</title>
+  <meta name="description" content="Jorge Pérez — Engineering Physics. Modeling, optimization, nonlinear dynamics and open quantum systems." />
+  <link rel="icon" href="/LOGO.png" sizes="any">
+  <link rel="stylesheet" href="../css/personal.css" />
 </head>
-<body>
 
-  <header class="navbar">
-    <div class="logo"><a href="../index.html">OP Group</a></div>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="../index.html">OP Group</a>
+      <nav class="subnav" aria-label="Profile">
+        <a href="../index.html#members">Team</a>
+        <a href="../index.html#events">Projects</a>
+        <a href="../index.html#contact">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <main class="profile-container">
-
+  <main id="main" class="container profile">
     <!-- Hero -->
     <section class="profile-hero">
-      <img src="../images/jorge2.png" alt="Jorge Perez" />
-      <div>
+      <img
+        src="../images/jorge2.png"
+        alt="Jorge Perez"
+        loading="lazy"
+        decoding="async"
+        width="420"
+        height="420"
+      />
+
+      <div class="profile-hero-copy">
+        <p class="kicker">Member Profile</p>
         <h1>Jorge Perez</h1>
-        <h3>B.S. in Engineering Physics</h3>
-        <p>Engineering Physics undergraduate student with strong background in mathematical modeling, problem-solving and collaborative research. As part of the academic coursework and team projects, combined with a solid background in physics and mathematics, I successfully solve complex problems in theoretical, numerical, and industrial areas of engineering and science.</p>
+        <p class="role">B.S. in Engineering Physics</p>
+        <p class="lead">
+          Engineering Physics undergraduate student with strong background in mathematical modeling, problem-solving and collaborative research.
+          Through academic coursework and team projects, combined with a solid foundation in physics and mathematics, I work on complex problems in theoretical, numerical, and industrial areas of engineering and science.
+        </p>
       </div>
     </section>
 
     <!-- Skills -->
-    <section class="skills-section">
-      <h2>Core Skills</h2>
-      <ul class="skills-list">
+    <section class="section">
+      <div class="section-head">
+        <h2>Core Skills</h2>
+        <p class="muted">Tools and topics I use most.</p>
+      </div>
 
-    <li>Python, C++, Excel, MATLAB, Solidworks</li>
-    <li>Finite Element Analysis (FEA)</li>
-    <li>Genetic algorithms for optimization</li>
-    <li>Dynamical systems</li>
-    <li>Open quantum systems</li>
-
+      <ul class="chips" aria-label="Skills">
+        <li>Python</li>
+        <li>C++</li>
+        <li>MATLAB</li>
+        <li>Excel</li>
+        <li>SolidWorks</li>
+        <li>Finite Element Analysis (FEA)</li>
+        <li>Genetic algorithms for optimization</li>
+        <li>Dynamical systems</li>
+        <li>Open quantum systems</li>
       </ul>
     </section>
 
     <!-- Projects -->
-    <section class="projects-section">
-      <h2>Research Projects & Experience</h2>
-
-      <div class="project-card-ongoing">
-        <h3>Nonlinear dynamics research paper </h3>
-        <h4>January 2025 – September 2025</h4>
-        <p>Coauthoring a scientific article that presents a novel algorithm to simplify and analyze complex dynamical systems. 
-          The preprint is available on arXiv and is currently under peer-review.</p>
+    <section class="section">
+      <div class="section-head">
+        <h2>Research Projects &amp; Experience</h2>
+        <p class="muted">Selected highlights.</p>
       </div>
 
-      <div class="project-card-ongoing">
-        <h3>Research scholar at Rice University</h3>
-        <h4>Summer 2025</h4>
-        <p>Applied data-driven topological models to simulate biological dynamical systems, collaborating with Dr. Evelyn Tang (MIT) and Dr. Adrian Jacobo (Chan Zuckerberg Biohub). 
-          Presented research at a poster session to an audience of 50+ participants.</p>
+      <div class="cards">
+        <article class="card card--ongoing">
+          <h3>Nonlinear dynamics research paper</h3>
+          <p class="meta">Jan 2025 – Sep 2025</p>
+          <p>
+            Coauthoring a scientific article that presents a novel algorithm to simplify and analyze complex dynamical systems.
+            The preprint is available on arXiv and is currently under peer review.
+          </p>
+        </article>
+
+        <article class="card card--ongoing">
+          <h3>Research scholar at Rice University</h3>
+          <p class="meta">Summer 2025</p>
+          <p>
+            Applied data-driven topological models to simulate biological dynamical systems, collaborating with Dr. Evelyn Tang (MIT)
+            and Dr. Adrian Jacobo (Chan Zuckerberg Biohub). Presented research at a poster session to 50+ participants.
+          </p>
+        </article>
+
+        <article class="card card--ongoing">
+          <h3>Data-driven analysis of open quantum systems</h3>
+          <p class="meta">Aug 2025 – Current</p>
+          <p>
+            Developing stochastic models to simulate interactions of quantum systems with their environment,
+            applying advanced quantum theory and mathematical modeling techniques.
+          </p>
+        </article>
+
+        <article class="card card--ongoing">
+          <h3>Collaborative Online International Learning (COIL) project</h3>
+          <p class="meta">Aug 2024 – Dec 2024</p>
+          <p>
+            Led a multicultural team to model the Yukawa potential in quantum mechanics.
+            Strengthened collaborative research skills across international academic teams.
+          </p>
+        </article>
+
+        <article class="card card--ongoing">
+          <h3>Cost Optimization for Self-Propelled Sprayers (John Deere)</h3>
+          <p class="meta">Aug 2024 – Dec 2024</p>
+          <p>
+            Implemented Finite Element Analysis (FEA) and Genetic Algorithms to optimize structural design
+            and supplier selection for agricultural machinery.
+          </p>
+        </article>
+
+        <article class="card card--ongoing">
+          <h3>Accelerated Material Design using Artificial Intelligence</h3>
+          <p class="meta">Feb 2024 – Dec 2024</p>
+          <p>
+            Performed data analysis to optimize, automate, and collect experimental data for alloy development using AI-driven methodologies.
+          </p>
+        </article>
+
+        <article class="card card--ongoing">
+          <h3>Phonon dispersion analysis of graphene</h3>
+          <p class="meta">Aug 2024 – Dec 2024</p>
+          <p>
+            Modeled phonon dispersion in graphene using harmonic approximations and solid-state physics principles,
+            focusing on vibrational dynamics and lattice interactions.
+          </p>
+        </article>
+
+        <article class="card card--ongoing">
+          <h3>Internship — The Learning Gate</h3>
+          <p class="meta">Aug 2023 – Jul 2025</p>
+          <p>
+            Conducted in-depth research and selection of specialized articles in data science to support an educational research initiative.
+          </p>
+        </article>
       </div>
-
-      <div class="project-card-ongoing">
-        <h3>Data-driven analysis of open quantum systems</h3>
-        <h4>Aug 2025 – Current </h4>
-        <p>Developing stochastic models to simulate interactions of quantum systems with their environment, applying advanced quantum theory and mathematical modeling techniques.</p>
-      </div>
-
-      <div class="project-card-ongoing">
-        <h3>Collaborative Online International Learning (COIL) project</h3>
-        <h4>Aug 2024 – Dec 2024</h4>
-        <p>Led a multicultural team to model the Yukawa potential in quantum mechanics. 
-          Strengthened collaborative research skills across international academic teams.</p>
-      </div>
-
-      <div class="project-card-ongoing">
-        <h3>Cost Optimization for Self-Propelled Sprayers (John Deere)</h3>
-        <h4>Aug 2024 - Dec 2024</h4>
-        <p>Implemented Finite Element Analysis (FEA) and Genetic Algorithms to optimize structural design and supplier selection for agricultural machinery.</p>
-      </div>
-
-      <div class="project-card-ongoing">
-        <h3>Accelerated Material Design using Artificial Intelligence</h3>
-        <h4>Feb 2024 - Dec 2024</h4>
-        <p>Performed data analysis to optimize, automate, and collect experimental data for alloy development using AI-driven methodologies.</p>
-      </div>
-
-      <div class="project-card-ongoing">
-        <h3>Phonon dispersion analysis of graphene</h3>
-        <h4>Aug 2024 - Dec 2024</h4>
-        <p>Modeled phonon dispersion in graphene using harmonic approximations and solid-state physics principles, focusing on vibrational dynamics and lattice interactions.</p>
-      </div>
-
-      <div class="project-card-ongoing">
-        <h3>Internship  – The Learning Gate</h3>
-        <h4>Aug 2023 - Jul 2025</h4>
-        <p>Conducted in-depth research and selection of specialized articles in data science to support an educational research initiative.</p>
-      </div>
-
-
     </section>
-
   </main>
 
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© 2025 OP Research Team</p>
+      <p class="muted"><a href="../index.html">Back to OP Group</a></p>
+    </div>
+  </footer>
 </body>
 </html>
