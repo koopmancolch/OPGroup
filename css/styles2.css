@@ -307,3 +307,27 @@ a:hover{ text-decoration:underline; }
   html{ scroll-behavior:auto; }
   *{ transition:none !important; }
 }
+
+/* Selected work section */
+
+.events .event-card h3 {
+  font-weight: 400;        /* remove bold */
+  margin-bottom: 0.4rem;
+  line-height: 1.35;
+}
+
+.events .event-card a {
+  color: #1a73e8;          /* blue link */
+  font-size: 0.95rem;
+  text-decoration: none;
+}
+
+.events .event-card a:hover {
+  text-decoration: underline;
+}
+
+/* Optional spacing polish */
+.events .event-card {
+  margin-bottom: 1.2rem;
+}
+
